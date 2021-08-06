@@ -1,0 +1,20 @@
+<html>
+<title>Kilometers to Miles Length Converter</title>
+<body>
+
+<h2>Length Converter</h2>
+<p>kilometer to miles conveter:</p>
+
+<p>
+  <label>Kilometers</label>
+  <input id="inputKilometers" type="number" placeholder="Kilometers" oninput="LengthConverter(this.value)" onchange="LengthConverter(this.value)">
+</p>
+<p>Miles: <span id="outputMiles"></span></p>
+
+<script>
+function LengthConverter(valNum) {
+  document.getElementById("outputMiles").innerHTML=valNum*0.62137;
+}
+</script>
+</body>
+</html>
